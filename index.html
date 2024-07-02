@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Helper</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="welcome-page">
+        <h1>Welcome!</h1>
+        <img src="imgs/hi.jpg" width="500" class="imgs">
+        <div id="welcome-content">
+            <input type="text" id="username" placeholder="Введите ваше имя">
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+    <div id="main-page" class="hidden">
+        <header>
+            <h1 id="greeting"></h1>
+        </header>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#welcome">Begin</a></li>
+                    <li><a href="#spell-search">Spell search</a></li>
+                    <li><a href="#class-search">Class search</a></li>
+                    <li><a href="#race-search">Race search</a></li>
+                    <li><a href="#monster-search">Monster search</a></li>
+                    <li><a href="#dice-roller">Dice roll</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section id="welcome">
+                <p">Welcome to our Dungeons & Dragons website!</p>
+                <img src="imgs/dndicon.png" width="300" class="imgs">
+                <p>Here you can find information about the spell, class, race or monster you are interested in! As well as one or more dices of your choice</p>
+            </section>
+            <img src="imgs/spell.jpg" width="400px" class="imgs">
+            <section id="spell-search" class="search">
+                <h2>Spell search</h2>
+                <input type="text" id="spell-name" placeholder="Enter the spell name">
+                <button id="spell-button">Search</button>
+                <div id="spell-result"></div>
+            </section>
+            <img src="imgs/bard.png" width="400px" class="imgs">
+            <section id="class-search" class="search">
+                <h2>Class search</h2>
+                <input type="text" id="class-name" placeholder="Enter the class name">
+                <button id="class-button">Search</button>
+                <div id="class-result"></div>
+            </section>
+            <img src="imgs/race.png" width="400px" class="imgs">
+            <section id="race-search" class="search">
+                <h2>Race search</h2>
+                <input type="text" id="race-name" placeholder="Enter the race name">
+                <button id="race-button">Search</button>
+                <div id="race-result"></div>
+            </section>
+            <img src="imgs/monster.png" width="500px" class="imgs">
+            <section id="monster-search" class="search">
+                <h2>Monster search</h2>
+                <input type="text" id="monster-name" placeholder="Enter the monster name">
+                <button id="monster-button">Search</button>
+                <div id="monster-result"></div>
+            </section>
+            <img src="imgs/dice.png" width="400px" class="imgs">
+            <section id="dice-roller">
+                <h2>Dice roll</h2>
+                <select id="dice-select">
+                    <option value="4">d4</option>
+                    <option value="6">d6</option>
+                    <option value="8">d8</option>
+                    <option value="10">d10</option>
+                    <option value="12">d12</option>
+                    <option value="20">d20</option>
+                    <option value="100">d100</option>
+                </select>
+                <button id="roll-button">Roll!</button>
+                <div id="dice-result"></div>
+            </section>
+            <section>
+                <footer>
+                    <p>The site was developed by N.V. Zhdanov, a student of KemSU, as part of a semester work on the subject "Programming Languages" under the guidance of teacher A.I. Zimin for the 4th semester</p>
+                </footer>
+            </section>
+            <div id="about">
+                <p style="font-size: 23pt;">About Us</p>
+                <p>Contacts: +79502738034, nikita47j@gmail.com</p>
+            </div>
+            <div>
+                <img src="imgs/dndicon.png" width="150px" id="dnd-img">
+            </div>
+        </main>
+    </div>
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>
